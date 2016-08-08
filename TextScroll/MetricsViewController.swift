@@ -10,6 +10,9 @@ import UIKit
 import Firebase
 
 class MetricsViewController: UIViewController {
+    /**
+     Submits collected data to firebase
+    */
     
     @IBOutlet weak var exitButton: UIButton!
     

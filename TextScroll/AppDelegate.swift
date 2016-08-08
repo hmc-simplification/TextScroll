@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import GPUImage
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

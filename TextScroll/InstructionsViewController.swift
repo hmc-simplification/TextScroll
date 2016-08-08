@@ -13,9 +13,14 @@ class InstructionsViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     //Info passed from tutorial VC to be sent to test VC
     var controlSwitchIsOn = false
-    var tiltMapping = 1
+    var tiltMapping = 2
     var iteration = -1
     var finishedTutorial = false
+    var fontSize: CGFloat = 100
+    var fontName = "Courier"
+    var totalIterations = 1
+    var textWindow: CGFloat = 10
+    var blurFilterSize: CGFloat!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +28,6 @@ class InstructionsViewController: UIViewController {
         self.nextButton.layer.cornerRadius = 10
         self.nextButton.clipsToBounds = true
     }
-    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         //Passes switch settings to next screen
@@ -33,6 +37,10 @@ class InstructionsViewController: UIViewController {
             tvc.iteration = iteration
             tvc.finishedTutorial = finishedTutorial
             tvc.tiltMapping = tiltMapping
+            tvc.fontSize = fontSize
+            tvc.fontName = fontName
+            tvc.totalIterations = totalIterations
+            tvc.textWindow = textWindow
         }
     }
 }

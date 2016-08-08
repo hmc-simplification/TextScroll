@@ -29,6 +29,11 @@ struct StopWatch {
         startTime=nil
     }
     
+    mutating func reset() {
+        accumulatedTime = 0.0
+        startTime = nil
+    }
+    
     func timeIntervalToString() -> String? {
         //Outputs the time in a user friendly Minutes:Seconds format.
         let dcf = NSDateComponentsFormatter()
