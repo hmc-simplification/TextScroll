@@ -346,13 +346,15 @@ class TestViewController: UIViewController {
         let outputImage = blurFilter.imageByFilteringImage(img)
         print("SIZE")
         print(outputImage.size)
-        blurView = UIImageView(frame: CGRectMake(0, 0, frame.width, frame.height))
-        blurView.image = outputImage
+        print(img.size)
         
+        blurView = UIImageView(frame: CGRectMake(0, 0, frame.width, frame.height))
         //Create gradient
         let clear = UIColor.clearColor().CGColor
         let white = UIColor.whiteColor().CGColor
-        blurView.backgroundColor = UIColor.whiteColor()
+        blurView.backgroundColor = UIColor.clearColor()
+        blurView.image = outputImage //doesn't show anything at the moment
+        
         
         let gradient = CAGradientLayer()
         gradient.bounds = scrollView.layer.bounds
@@ -365,7 +367,6 @@ class TestViewController: UIViewController {
         gradient.locations = [0.0, bFS*0.9, bFS, (1-bFS)*0.9, (1-bFS), 1.0]
         
         scrollView.layer.mask = gradient
-        
         //Top
         //scrollView with gradient mask
         //label in scrollView

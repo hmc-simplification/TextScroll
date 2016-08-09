@@ -21,8 +21,6 @@
 		2B0F65D61D340D6700B38E7D /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B0F65D51D340D6700B38E7D /* home.png */; };
 		2B102C721D46BA3E0048BC64 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B102C711D46BA330048BC64 /* GPUImage.framework */; };
 		2B102C741D46BA4B0048BC64 /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B102C711D46BA330048BC64 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2B102CDD1D46C8E60048BC64 /* FilterOperationTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B102CDC1D46C8E60048BC64 /* FilterOperationTypes.swift */; };
-		2B102CDF1D46C8EA0048BC64 /* FilterOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B102CDE1D46C8EA0048BC64 /* FilterOperations.swift */; };
 		2B1A93381D46B93700AA5577 /* Pods_TextScroll.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A91832ED028891F0BBCC8B05 /* Pods_TextScroll.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2B36E72B1D345BB20043B999 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B36E72A1D345BB20043B999 /* StopWatch.swift */; };
 		2B36E7311D345FBE0043B999 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B36E7301D345FBE0043B999 /* Extensions.swift */; };
@@ -97,11 +95,10 @@
 		2B0F65D31D3408A200B38E7D /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		2B0F65D51D340D6700B38E7D /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		2B102C681D46BA330048BC64 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = "../GPUImage-master/framework/GPUImage.xcodeproj"; sourceTree = "<group>"; };
-		2B102CDC1D46C8E60048BC64 /* FilterOperationTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilterOperationTypes.swift; path = "../GPUImage2-master/examples/iOS/FilterShowcase/FilterShowcaseSwift/FilterOperationTypes.swift"; sourceTree = "<group>"; };
-		2B102CDE1D46C8EA0048BC64 /* FilterOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilterOperations.swift; path = "../GPUImage2-master/examples/iOS/FilterShowcase/FilterShowcaseSwift/FilterOperations.swift"; sourceTree = "<group>"; };
 		2B19F3EC1D3EE3FE00632F82 /* TextScroll-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TextScroll-Bridging-Header.h"; sourceTree = "<group>"; };
 		2B36E72A1D345BB20043B999 /* StopWatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StopWatch.swift; path = TextScroll/StopWatch.swift; sourceTree = "<group>"; };
 		2B36E7301D345FBE0043B999 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = TextScroll/Extensions.swift; sourceTree = "<group>"; };
+		2B667C961D592ED8001157BC /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		2BBEEBBD1D36B701001F8CAC /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		2BC5860B1D35B9DA006166B9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2BE4E5BF1D306EB70040B8BE /* MetricsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetricsViewController.swift; sourceTree = "<group>"; };
@@ -958,8 +955,7 @@
 		4A70E254E7B551B23874E6FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2B102CDC1D46C8E60048BC64 /* FilterOperationTypes.swift */,
-				2B102CDE1D46C8EA0048BC64 /* FilterOperations.swift */,
+				2B667C961D592ED8001157BC /* Accelerate.framework */,
 				2B102C681D46BA330048BC64 /* GPUImage.xcodeproj */,
 				2BF12E7B1D467FDC0081DF89 /* GPUImage.framework */,
 				2BF12D071D467F920081DF89 /* Source */,
@@ -1132,8 +1128,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B102CDD1D46C8E60048BC64 /* FilterOperationTypes.swift in Sources */,
-				2B102CDF1D46C8EA0048BC64 /* FilterOperations.swift in Sources */,
 				2B0F65D41D3408A200B38E7D /* IntroViewController.swift in Sources */,
 				2BE4E5C01D306EB70040B8BE /* MetricsViewController.swift in Sources */,
 				2BBEEBBE1D36B701001F8CAC /* TutorialViewController.swift in Sources */,
@@ -1276,7 +1270,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = TextScroll/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cssummer16.TextScroll;
@@ -1294,7 +1287,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = TextScroll/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cssummer16.TextScroll;
